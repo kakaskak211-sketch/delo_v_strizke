@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>ДЕЛО В СТРИЖКЕ — Барбершоп в Уфе | ул. Юрия Гагарина, 23</title>
+  <meta name="description" content="Барбершоп «Дело в стрижке» в Уфе (ул. Юрия Гагарина, 23). Мужские и детские стрижки, оформление бороды, опасное бритьё. Онлайн-запись за 30 секунд через YCLIENTS." />
+
+  <!-- Google Fonts: Cyrillic-ready Display, Condensed Accent, Clean Sans & Technical Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@600;700&family=Unbounded:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#0B0B0C',
+            charcoal: '#131316',
+            hairline: '#242427',
+            bone: '#F2EFE9',
+            ink: '#141416',
+            brass: '#D4A359',
+            brassHover: '#E5B870',
+            muted: '#8E8E93',
+          },
+          fontFamily: {
+            display: ['Unbounded', 'sans-serif'],
+            condensed: ['Oswald', 'sans-serif'],
+            sans: ['Manrope', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* ==========================================================================
+       CUSTOM EDITORIAL & ARCHITECTURAL STYLES
+       ========================================================================== */
+    :root {
+      --bg-obsidian: #0B0B0C;
+      --bg-bone: #F2EFE9;
+      --accent-brass: #D4A359;
+      --border-dark: #242427;
+      --border-light: #1A1A1C;
+    }
+
+    html {
+      background-color: var(--bg-obsidian);
+      color: var(--bg-bone);
+      font-family: 'Manrope', sans-serif;
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Hide scrollbar for mobile horizontal filter rail */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Subtle Film Grain / Noise Texture Overlay */
+    .noise-overlay {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 50;
+      opacity: 0.04;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    /* Kinetic Marquee Animation */
+    @keyframes marqueeScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 28s linear infinite;
+    }
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+
+    /* Rotating Stamp Animation */
+    @keyframes slowSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: slowSpin 22s linear infinite;
+    }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Service Row Active & Hover States */
+    .service-row {
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+    .service-row.selected {
+      background-color: rgba(212, 163, 89, 0.11);
+      border-color: rgba(212, 163, 89, 0.65);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0B0C;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2C2C30;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4A359;
+    }
+
+    /* Sticky Visit Receipt Bar Animation */
+    #visit-bar {
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    #visit-bar.hidden-bar {
+      transform: translateY(120%);
+      opacity: 0;
+      pointer-events: none;
+    }
+    #visit-bar.visible-bar {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+
+<body class="bg-obsidian text-bone selection:bg-brass selection:text-obsidian relative">
+
+  <!-- Film Grain Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       REUSABLE INLINE SVG LOGO DEFINITION
+       ========================================================================== -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true">
+    <defs>
+      <path id="barbershopBottomArc" d="M 46,160 A 86,86 0 0,0 194,160" />
+    </defs>
+    <symbol id="logo-delo-v-strizhke" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="110" fill="none" stroke="currentColor" stroke-width="5.5" />
+      <circle cx="120" cy="120" r="100" fill="none" stroke="currentColor" stroke-width="2" />
+
+      <line x1="46" y1="62" x2="80" y2="62" stroke="currentColor" stroke-width="2.5" />
+      <text x="63" y="80" text-anchor="middle" fill="currentColor" font-family="Unbounded, sans-serif" font-weight="800" font-size="11.5" letter-spacing="0.5">ESTD</text>
+      <line x1="46" y1="86" x2="80" y2="86" stroke="currentColor" stroke-width="2.5" />
+
+      <line x1="160" y1="62" x2="194" y2="62" stroke="currentColor" stroke-width="2.5" />
+      <text x="177" y="80" text-anchor="middle" fill="currentColor" font-family="Unbounded, sans-serif" font-weight="800" font-size="11.5" letter-spacing="0.5">2023</text>
+      <line x1="160" y1="86" x2="194" y2="86" stroke="currentColor" stroke-width="2.5" />
+
+      <path d="M98,66 C94,52 103,40 112,26 C113,34 120,33 128,37 C140,42 146,54 142,67 C139,60 132,57 120,57 C109,57 102,60 98,66 Z" fill="currentColor" />
+      <path d="M97,66 C95,72 96,79 99,83 L102,75 C101,71 101,67 103,64 Z" fill="currentColor" />
+      <path d="M143,66 C145,72 144,79 141,83 L138,75 C139,71 139,67 137,64 Z" fill="currentColor" />
+      <rect x="102" y="69" width="15" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.3" />
+      <rect x="123" y="69" width="15" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.3" />
+      <line x1="117" y1="73" x2="123" y2="73" stroke="currentColor" stroke-width="2.3" />
+      <line x1="99" y1="72" x2="102" y2="72" stroke="currentColor" stroke-width="2" />
+      <line x1="138" y1="72" x2="141" y2="72" stroke="currentColor" stroke-width="2" />
+      <path d="M110,92 C112,84 128,84 130,92 C126,89 114,89 110,92 Z" fill="currentColor" />
+      <path d="M99,82 C101,96 108,104 120,104 C132,104 139,96 141,82 C138,91 132,96 125,97 C124,94 116,94 115,97 C108,96 102,91 99,82 Z" fill="currentColor" />
+
+      <rect x="6" y="103" width="228" height="36" fill="var(--logo-bg, #0B0B0C)" stroke="currentColor" stroke-width="4" />
+      <text x="120" y="126.5" text-anchor="middle" fill="currentColor" font-family="Unbounded, sans-serif" font-weight="800" font-size="14.2" letter-spacing="0.4">ДЕЛО В СТРИЖКЕ</text>
+
+      <g transform="translate(120, 166) scale(0.92)" stroke="currentColor" fill="currentColor">
+        <g transform="rotate(42)">
+          <rect x="-24" y="-4" width="48" height="4.5" rx="1.5" />
+          <line x1="-20" y1="0" x2="-20" y2="8" stroke-width="2" />
+          <line x1="-15" y1="0" x2="-15" y2="8" stroke-width="2" />
+          <line x1="-10" y1="0" x2="-10" y2="8" stroke-width="2" />
+          <line x1="-5" y1="0" x2="-5" y2="8" stroke-width="2" />
+          <line x1="0" y1="0" x2="0" y2="8" stroke-width="2" />
+          <line x1="5" y1="0" x2="5" y2="8" stroke-width="2" />
+          <line x1="10" y1="0" x2="10" y2="8" stroke-width="2" />
+          <line x1="15" y1="0" x2="15" y2="8" stroke-width="2" />
+          <line x1="20" y1="0" x2="20" y2="8" stroke-width="2" />
+        </g>
+        <g transform="rotate(-42)">
+          <line x1="-14" y1="-2" x2="24" y2="-1" stroke-width="2.6" stroke-linecap="round" />
+          <line x1="-14" y1="2" x2="22" y2="1" stroke-width="2.6" stroke-linecap="round" />
+          <circle cx="-18" cy="-5.5" r="5" fill="none" stroke-width="2.4" />
+          <circle cx="-18" cy="5.5" r="5" fill="none" stroke-width="2.4" />
+        </g>
+      </g>
+
+      <text fill="currentColor" font-family="Unbounded, sans-serif" font-weight="800" font-size="14" letter-spacing="2.8">
+        <textPath href="#barbershopBottomArc" startOffset="50%" text-anchor="middle">BARBERSHOP</textPath>
+      </text>
+    </symbol>
+  </svg>
+
+  <!-- ==========================================================================
+       1. ARCHITECTURAL TOP NAVIGATION BAR
+       ========================================================================== -->
+  <header class="fixed top-0 left-0 right-0 z-40 bg-obsidian/92 backdrop-blur-md border-b border-hairline">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 h-16 sm:h-20 flex items-center justify-between gap-3">
+      <!-- Brand Identity -->
+      <a href="#top" class="flex items-center gap-2.5 sm:gap-3.5 group focus:outline-none min-w-0">
+        <svg class="w-10 h-10 sm:w-12 sm:h-12 text-bone group-hover:text-brass transition-colors duration-300 shrink-0" style="--logo-bg: #0B0B0C;" aria-label="Логотип Дело в стрижке">
+          <use href="#logo-delo-v-strizhke"></use>
+        </svg>
+        <div class="flex flex-col min-w-0">
+          <span class="font-display text-xs sm:text-base font-extrabold tracking-tight leading-none text-bone group-hover:text-brass transition-colors truncate">
+            ДЕЛО В СТРИЖКЕ
+          </span>
+          <span class="font-mono text-[9px] sm:text-[10px] uppercase tracking-[0.18em] sm:tracking-[0.22em] text-muted mt-1 truncate">
+            BARBERSHOP • ESTD 2023
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-8 font-mono text-xs uppercase tracking-[0.16em] text-bone/80">
+        <a href="#services" class="hover:text-brass transition-colors py-2">Услуги</a>
+        <a href="#masters" class="hover:text-brass transition-colors py-2">Мастера</a>
+        <a href="#why-us" class="hover:text-brass transition-colors py-2">О нас</a>
+        <a href="#contacts" class="hover:text-brass transition-colors py-2">Контакты</a>
+      </nav>
+
+      <!-- Right Controls: Address Pill & Primary CTA -->
+      <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+        <a href="#contacts" class="hidden xl:inline-flex items-center gap-2 px-3.5 py-2 border border-hairline rounded-sm font-mono text-[11px] text-muted hover:text-bone hover:border-brass/60 transition-colors">
+          <span class="w-1.5 h-1.5 rounded-full bg-brass animate-pulse"></span>
+          Уфа, Гагарина 23
+        </a>
+
+        <a
+          href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex items-center gap-2.5 bg-brass hover:bg-brassHover text-obsidian font-display font-bold text-xs uppercase tracking-wider px-5 py-3 rounded-sm transition-all duration-200 active:scale-95"
+        >
+          <span>Записаться</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg>
+        </a>
+
+        <!-- Compact Mobile Quick Booking Button -->
+        <a
+          href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+          target="_blank"
+          rel="noopener noreferrer"
+          class="sm:hidden inline-flex items-center justify-center bg-brass active:bg-brassHover text-obsidian font-display font-bold text-[10px] uppercase tracking-wider px-3 py-2.5 rounded-sm transition-transform active:scale-95"
+        >
+          Запись
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          class="lg:hidden p-2 sm:p-2.5 border border-hairline rounded-sm text-bone hover:border-brass hover:text-brass transition-colors"
+        >
+          <svg id="icon-hamburger" class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg id="icon-close" class="w-5 h-5 sm:w-6 sm:h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="lg:hidden hidden bg-obsidian border-b border-hairline shadow-2xl">
+      <div class="px-4 py-5 flex flex-col gap-3">
+        <a href="#services" class="mobile-nav-link font-display text-base uppercase tracking-wide py-2.5 border-b border-hairline/70 hover:text-brass active:text-brass">01 / Услуги и прайс</a>
+        <a href="#masters" class="mobile-nav-link font-display text-base uppercase tracking-wide py-2.5 border-b border-hairline/70 hover:text-brass active:text-brass">02 / Команда мастеров</a>
+        <a href="#why-us" class="mobile-nav-link font-display text-base uppercase tracking-wide py-2.5 border-b border-hairline/70 hover:text-brass active:text-brass">03 / О барбершопе</a>
+        <a href="#contacts" class="mobile-nav-link font-display text-base uppercase tracking-wide py-2.5 border-b border-hairline/70 hover:text-brass active:text-brass">04 / Адрес и карта</a>
+
+        <div class="pt-2 flex flex-col gap-3">
+          <div class="font-mono text-xs text-muted flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brass shrink-0"></span>
+            г. Уфа, ул. Юрия Гагарина, 23
+          </div>
+          <a
+            href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full text-center bg-brass text-obsidian font-display font-bold text-xs uppercase tracking-wider py-3.5 rounded-sm"
+          >
+            Онлайн-запись YCLIENTS →
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="pt-16 sm:pt-20">
+
+    <!-- ==========================================================================
+         2. ASYMMETRIC EDITORIAL HERO SECTION
+         ========================================================================== -->
+    <section class="relative border-b border-hairline overflow-hidden">
+      <!-- Subtle Architectural Grid Lines -->
+      <div class="absolute inset-0 pointer-events-none opacity-20 sm:opacity-25" aria-hidden="true">
+        <div class="max-w-[1440px] mx-auto h-full grid grid-cols-2 lg:grid-cols-4 border-x border-hairline">
+          <div class="border-r border-hairline"></div>
+          <div class="hidden lg:block border-r border-hairline"></div>
+          <div class="hidden lg:block border-r border-hairline"></div>
+        </div>
+      </div>
+
+      <div class="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-7 pb-12 sm:pt-12 sm:pb-16 lg:pt-20 lg:pb-24">
+        <!-- Top Meta Strip -->
+        <div class="flex flex-wrap items-center justify-between gap-2.5 sm:gap-4 pb-5 sm:pb-8 border-b border-hairline font-mono text-[10px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.2em] text-muted">
+          <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+            <span class="px-2 py-0.5 sm:px-2.5 sm:py-1 border border-brass/50 text-brass rounded-sm">УФА // СИПАЙЛОВО</span>
+            <span>УЛ. ЮРИЯ ГАГАРИНА, 23</span>
+          </div>
+          <div class="hidden sm:flex items-center gap-6">
+            <span>54.7695° N, 56.0598° E</span>
+            <span class="text-bone">ESTD 2023</span>
+          </div>
+        </div>
+
+        <!-- Giant Asymmetric Headline + Rotating Emblem -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 items-end mt-7 sm:mt-10 lg:mt-14">
+          <div class="lg:col-span-8">
+            <p class="font-mono text-[11px] sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.25em] text-brass mb-3.5 sm:mb-5">
+              [ Мужское ателье стрижки и бритья ]
+            </p>
+            <h1 class="uppercase">
+              <span class="block font-display font-black leading-[0.95] tracking-tight text-bone text-[clamp(2.5rem,11vw,6.2rem)]">
+                ДЕЛО
+              </span>
+              <span class="block font-condensed font-bold leading-[0.94] tracking-[0.04em] text-brass text-[clamp(3.2rem,14vw,7.6rem)] mt-1">
+                В СТРИЖКЕ
+              </span>
+            </h1>
+            <p class="mt-5 sm:mt-7 max-w-2xl text-sm sm:text-lg text-bone/75 leading-relaxed font-normal">
+              Честный мужской барбершоп в Уфе без лишнего пафоса и переплат. Выверенные формы, опасное бритьё, точный тайминг <span class="text-bone font-semibold">30 минут</span> и мастера, которым доверяют сотни постоянных клиентов.
+            </p>
+
+            <!-- Dual Action Buttons -->
+            <div class="mt-7 sm:mt-9 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
+              <a
+                href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-3 bg-brass hover:bg-brassHover text-obsidian font-display font-bold text-xs sm:text-sm uppercase tracking-wider px-6 sm:px-8 py-4 rounded-sm transition-all duration-200 hover:-translate-y-0.5 active:scale-[0.99] shadow-lg shadow-brass/10"
+              >
+                <span>Онлайн-запись YCLIENTS</span>
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
+                </svg>
+              </a>
+
+              <a
+                href="#services"
+                class="inline-flex items-center justify-center gap-3 border border-bone/30 hover:border-brass text-bone hover:text-brass font-display font-semibold text-xs sm:text-sm uppercase tracking-wider px-6 sm:px-8 py-3.5 sm:py-4 rounded-sm transition-all duration-200"
+              >
+                <span>Собрать визит и цены</span>
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Rotating Architectural Stamp Badge & Live Quick Card -->
+          <div class="lg:col-span-4 flex flex-col items-stretch lg:items-end justify-between gap-6 lg:gap-8">
+            <!-- Rotating Circular Emblem Stamp (hidden on very small phones to keep hero tight, shown sm+) -->
+            <div class="hidden sm:flex relative w-44 h-44 lg:w-56 lg:h-56 items-center justify-center self-center lg:self-end">
+              <svg viewBox="0 0 200 200" class="w-full h-full animate-spin-slow text-brass/80" aria-hidden="true">
+                <defs>
+                  <path id="stampCirclePath" d="M 100, 100 m -82, 0 a 82,82 0 1,1 164,0 a 82,82 0 1,1 -164,0" />
+                </defs>
+                <text fill="currentColor" font-family="JetBrains Mono, monospace" font-size="11.5" font-weight="600" letter-spacing="3.6">
+                  <textPath href="#stampCirclePath">ESTD 2023 • УФА • ГАГАРИНА 23 • BARBERSHOP • </textPath>
+                </text>
+              </svg>
+              <div class="absolute inset-0 flex items-center justify-center p-8 lg:p-9">
+                <svg class="w-full h-full text-bone" style="--logo-bg: #0B0B0C;" aria-label="Эмблема Дело в стрижке">
+                  <use href="#logo-delo-v-strizhke"></use>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Live Booking Status Box -->
+            <div class="w-full border border-hairline bg-charcoal/90 p-4 sm:p-5 rounded-sm">
+              <div class="flex items-center justify-between font-mono text-[11px] uppercase tracking-wider text-muted mb-3">
+                <span class="flex items-center gap-2 text-bone">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  Открыта запись сегодня
+                </span>
+                <span>3 мастера</span>
+              </div>
+              <div class="flex items-center justify-between gap-2 pt-3 border-t border-hairline">
+                <div>
+                  <div class="font-display text-sm font-bold text-bone">Мужская стрижка</div>
+                  <div class="font-mono text-xs text-muted">30 мин • все мастера</div>
+                </div>
+                <div class="font-mono text-xl font-bold text-brass shrink-0">700 ₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architectural Metrics Strip -->
+        <div class="mt-10 sm:mt-14 pt-6 sm:pt-8 border-t border-hairline grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-0 lg:divide-x divide-hairline">
+          <div class="bg-charcoal/50 border border-hairline/80 p-3.5 rounded-sm lg:bg-transparent lg:border-0 lg:p-0 lg:pr-8">
+            <div class="font-mono text-2xl sm:text-4xl font-bold text-bone">295<span class="text-brass">+</span></div>
+            <div class="font-mono text-[10px] sm:text-xs uppercase tracking-wider text-muted mt-1 leading-snug">Реальных отзывов в YCLIENTS</div>
+          </div>
+          <div class="bg-charcoal/50 border border-hairline/80 p-3.5 rounded-sm lg:bg-transparent lg:border-0 lg:p-0 lg:px-8">
+            <div class="font-mono text-2xl sm:text-4xl font-bold text-bone">30 <span class="text-sm sm:text-lg text-brass">мин</span></div>
+            <div class="font-mono text-[10px] sm:text-xs uppercase tracking-wider text-muted mt-1 leading-snug">Чёткий стандарт на услугу</div>
+          </div>
+          <div class="bg-charcoal/50 border border-hairline/80 p-3.5 rounded-sm lg:bg-transparent lg:border-0 lg:p-0 lg:px-8">
+            <div class="font-mono text-2xl sm:text-4xl font-bold text-bone"><span class="text-sm sm:text-lg text-brass">от</span> 400 ₽</div>
+            <div class="font-mono text-[10px] sm:text-xs uppercase tracking-wider text-muted mt-1 leading-snug">Честный прайс без доплат</div>
+          </div>
+          <div class="bg-charcoal/50 border border-hairline/80 p-3.5 rounded-sm lg:bg-transparent lg:border-0 lg:p-0 lg:pl-8">
+            <div class="font-mono text-2xl sm:text-4xl font-bold text-bone">9 <span class="text-sm sm:text-lg text-brass">услуг</span></div>
+            <div class="font-mono text-[10px] sm:text-xs uppercase tracking-wider text-muted mt-1 leading-snug">Стрижки, борода, окрашивание</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. CONTINUOUS KINETIC MARQUEE STRIP
+         ========================================================================== -->
+    <div class="bg-brass text-obsidian border-b border-obsidian py-2.5 sm:py-3.5 overflow-hidden select-none" aria-hidden="true">
+      <div class="marquee-track font-display font-extrabold text-[11px] sm:text-sm uppercase tracking-[0.16em] sm:tracking-[0.18em]">
+        <div class="flex items-center gap-6 sm:gap-8 px-4">
+          <span>ДЕЛО В СТРИЖКЕ</span>
+          <span>✦</span>
+          <span>МУЖСКАЯ СТРИЖКА 700 ₽</span>
+          <span>✦</span>
+          <span>УФА • ЮРИЯ ГАГАРИНА, 23</span>
+          <span>✦</span>
+          <span>ОФОРМЛЕНИЕ БОРОДЫ 500 ₽</span>
+          <span>✦</span>
+          <span>ОПАСНОЕ БРИТЬЁ</span>
+          <span>✦</span>
+          <span>ОНЛАЙН-ЗАПИСЬ 24/7</span>
+          <span>✦</span>
+        </div>
+        <div class="flex items-center gap-6 sm:gap-8 px-4">
+          <span>ДЕЛО В СТРИЖКЕ</span>
+          <span>✦</span>
+          <span>МУЖСКАЯ СТРИЖКА 700 ₽</span>
+          <span>✦</span>
+          <span>УФА • ЮРИЯ ГАГАРИНА, 23</span>
+          <span>✦</span>
+          <span>ОФОРМЛЕНИЕ БОРОДЫ 500 ₽</span>
+          <span>✦</span>
+          <span>ОПАСНОЕ БРИТЬЁ</span>
+          <span>✦</span>
+          <span>ОНЛАЙН-ЗАПИСЬ 24/7</span>
+          <span>✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         4. INTERACTIVE SERVICE CONSTRUCTOR ("ПРАЙС И КАЛЬКУЛЯТОР ВИЗИТА")
+         ========================================================================== -->
+    <section id="services" class="scroll-mt-16 sm:scroll-mt-20 py-14 sm:py-20 lg:py-28 border-b border-hairline">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
+        <!-- Section Header -->
+        <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 pb-7 sm:pb-10 border-b border-hairline">
+          <div>
+            <span class="font-mono text-[11px] sm:text-xs uppercase tracking-[0.22em] text-brass">01 // Прайс и калькулятор визита</span>
+            <h2 class="font-display text-2xl sm:text-5xl font-black uppercase tracking-tight mt-2.5 sm:mt-3 leading-none">
+              Выберите услуги
+            </h2>
+          </div>
+          <p class="max-w-md text-sm sm:text-base text-muted leading-relaxed">
+            Нажимайте на нужные позиции — снизу автоматически соберётся ваш <span class="text-bone font-medium">чек визита</span> с общим временем и точной стоимостью.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs (Horizontal swipe rail on mobile) -->
+        <div id="category-tabs" class="reveal flex flex-nowrap sm:flex-wrap items-center gap-2 sm:gap-2.5 mt-6 sm:mt-8 mb-6 sm:mb-10 overflow-x-auto no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 pb-1" role="tablist" aria-label="Фильтр категорий услуг">
+          <button type="button" data-category="all" class="filter-tab shrink-0 active bg-bone text-obsidian font-mono text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded-sm border border-bone transition-all">
+            Все (9)
+          </button>
+          <button type="button" data-category="Стрижки" class="filter-tab shrink-0 bg-transparent text-bone/80 hover:text-bone hover:border-brass font-mono text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded-sm border border-hairline transition-all">
+            Стрижки (5)
+          </button>
+          <button type="button" data-category="Борода" class="filter-tab shrink-0 bg-transparent text-bone/80 hover:text-bone hover:border-brass font-mono text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded-sm border border-hairline transition-all">
+            Борода (1)
+          </button>
+          <button type="button" data-category="Окрашивание" class="filter-tab shrink-0 bg-transparent text-bone/80 hover:text-bone hover:border-brass font-mono text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded-sm border border-hairline transition-all">
+            Окрашивание (2)
+          </button>
+          <button type="button" data-category="Уход" class="filter-tab shrink-0 bg-transparent text-bone/80 hover:text-bone hover:border-brass font-mono text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded-sm border border-hairline transition-all">
+            Уход (1)
+          </button>
+        </div>
+
+        <!-- Editorial Hairline Services List -->
+        <div id="services-list" class="reveal border-t border-hairline">
+          <!-- Populated dynamically by script -->
+        </div>
+
+        <!-- Helper Footnote -->
+        <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-4 font-mono text-[11px] sm:text-xs text-muted">
+          <span>* Все цены актуальны и синхронизированы с виджетом YCLIENTS.</span>
+          <a
+            href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-brass hover:underline uppercase tracking-wider"
+          >
+            Открыть полный виджет YCLIENTS →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. MASTERS SHOWCASE ("КОМАНДА МАСТЕРОВ") — WARM BONE PAPER CONTRAST SECTION
+         ========================================================================== -->
+    <section id="masters" class="scroll-mt-16 sm:scroll-mt-20 bg-bone text-ink py-14 sm:py-20 lg:py-28 border-b border-ink">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
+        <!-- Section Header -->
+        <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 pb-7 sm:pb-10 border-b border-ink/20">
+          <div>
+            <span class="font-mono text-[11px] sm:text-xs uppercase tracking-[0.22em] text-ink/60 font-semibold">02 // Команда барбершопа</span>
+            <h2 class="font-display text-2xl sm:text-5xl font-black uppercase tracking-tight mt-2.5 sm:mt-3 leading-none text-ink">
+              Мастера своего дела
+            </h2>
+          </div>
+          <p class="max-w-md text-sm sm:text-base text-ink/75 leading-relaxed">
+            Выберите удобный слот у конкретного мастера или запишитесь к любому свободному специалисту. Рейтинг подтверждён реальными отзывами клиентов.
+          </p>
+        </div>
+
+        <!-- 3 Architectural Master Dossier Cards -->
+        <div class="reveal grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-6 mt-8 sm:mt-12">
+
+          <!-- MASTER 01: АЛИК -->
+          <article class="master-card group relative border border-ink bg-bone flex flex-col justify-between transition-all duration-300 lg:hover:-translate-y-1 lg:hover:shadow-[8px_8px_0px_#0B0B0C]">
+            <div class="px-4 sm:px-6 py-3 sm:py-4 border-b border-ink flex flex-wrap items-center justify-between gap-2 bg-ink text-bone">
+              <span class="font-mono text-[11px] sm:text-xs uppercase tracking-widest">ДОСЬЕ // 01</span>
+              <span class="font-mono text-[10px] sm:text-[11px] uppercase tracking-wider px-2 py-0.5 bg-brass text-obsidian font-bold rounded-sm">
+                ★ Топ-мастер
+              </span>
+            </div>
+
+            <div class="p-5 sm:p-7 flex-1 flex flex-col">
+              <div class="flex items-center gap-4 sm:gap-5 mb-5 sm:mb-6">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-ink text-bone border border-ink flex items-center justify-center relative overflow-hidden">
+                  <svg viewBox="0 0 80 80" class="w-full h-full" aria-hidden="true">
+                    <rect width="80" height="80" fill="#0B0B0C" />
+                    <circle cx="40" cy="40" r="32" fill="none" stroke="#D4A359" stroke-width="1" stroke-dasharray="3 3" />
+                    <path d="M12 68 L68 12" stroke="#242427" stroke-width="1" />
+                    <text x="40" y="48" text-anchor="middle" fill="#F2EFE9" font-family="Unbounded, sans-serif" font-weight="900" font-size="26">АЛ</text>
+                  </svg>
+                </div>
+                <div>
+                  <span class="inline-block font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] px-2 py-0.5 sm:px-2.5 sm:py-1 border border-ink/30 text-ink/80 mb-1.5 sm:mb-2">
+                    Барбер
+                  </span>
+                  <h3 class="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight leading-none">Алик</h3>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between py-3 border-y border-ink/20 mb-4 sm:mb-5 font-mono text-xs">
+                <div class="flex items-center gap-1 text-ink">
+                  <span class="text-base leading-none text-amber-600">★★★★★</span>
+                  <span class="font-bold ml-1">5.0</span>
+                </div>
+                <span class="font-bold uppercase tracking-wider">246 отзывов</span>
+              </div>
+
+              <p class="text-sm text-ink/80 leading-relaxed mb-5 sm:mb-6">
+                Мастер с самой высокой базой постоянных гостей. Точные фейды, классические мужские формы, идеальное оформление бороды и опасное бритьё.
+              </p>
+
+              <div class="mt-auto">
+                <div class="font-mono text-[11px] uppercase tracking-wider text-ink/60 mb-2.5">
+                  Ближайшее время сегодня:
+                </div>
+                <div class="flex flex-wrap gap-2 mb-5 sm:mb-6">
+                  <button type="button" class="slot-pill px-3.5 py-2.5 border border-ink font-mono text-xs font-semibold hover:bg-ink hover:text-bone transition-colors rounded-sm" data-master="Алик" data-slot="18:30">18:30</button>
+                  <button type="button" class="slot-pill px-3.5 py-2.5 border border-ink font-mono text-xs font-semibold hover:bg-ink hover:text-bone transition-colors rounded-sm" data-master="Алик" data-slot="19:00">19:00</button>
+                  <a href="https://n1170587.yclients.com/company/1074226/personal/menu?o=" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2.5 border border-ink/30 font-mono text-xs text-ink/70 hover:border-ink hover:text-ink transition-colors rounded-sm">Другое время</a>
+                </div>
+
+                <a
+                  href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="master-cta w-full inline-flex items-center justify-center gap-2 bg-ink hover:bg-brass text-bone hover:text-obsidian font-display font-bold text-xs uppercase tracking-wider py-4 px-5 transition-colors rounded-sm"
+                  data-default-label="Записаться к Алику"
+                >
+                  <span>Записаться к Алику</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- MASTER 02: БАБУР -->
+          <article class="master-card group relative border border-ink bg-bone flex flex-col justify-between transition-all duration-300 lg:hover:-translate-y-1 lg:hover:shadow-[8px_8px_0px_#0B0B0C]">
+            <div class="px-4 sm:px-6 py-3 sm:py-4 border-b border-ink flex flex-wrap items-center justify-between gap-2">
+              <span class="font-mono text-[11px] sm:text-xs uppercase tracking-widest text-ink/70">ДОСЬЕ // 02</span>
+              <span class="font-mono text-[10px] sm:text-[11px] uppercase tracking-wider px-2 py-0.5 border border-ink font-semibold rounded-sm">
+                Опытный барбер
+              </span>
+            </div>
+
+            <div class="p-5 sm:p-7 flex-1 flex flex-col">
+              <div class="flex items-center gap-4 sm:gap-5 mb-5 sm:mb-6">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-ink text-bone border border-ink flex items-center justify-center relative overflow-hidden">
+                  <svg viewBox="0 0 80 80" class="w-full h-full" aria-hidden="true">
+                    <rect width="80" height="80" fill="#141416" />
+                    <rect x="10" y="10" width="60" height="60" fill="none" stroke="#D4A359" stroke-width="1" />
+                    <text x="40" y="48" text-anchor="middle" fill="#F2EFE9" font-family="Unbounded, sans-serif" font-weight="900" font-size="26">ББ</text>
+                  </svg>
+                </div>
+                <div>
+                  <span class="inline-block font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] px-2 py-0.5 sm:px-2.5 sm:py-1 border border-ink/30 text-ink/80 mb-1.5 sm:mb-2">
+                    Барбер
+                  </span>
+                  <h3 class="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight leading-none">Бабур</h3>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between py-3 border-y border-ink/20 mb-4 sm:mb-5 font-mono text-xs">
+                <div class="flex items-center gap-1 text-ink">
+                  <span class="text-base leading-none text-amber-600">★★★★★</span>
+                  <span class="font-bold ml-1">5.0</span>
+                </div>
+                <span class="font-bold uppercase tracking-wider">47 отзывов</span>
+              </div>
+
+              <p class="text-sm text-ink/80 leading-relaxed mb-5 sm:mb-6">
+                Уверенный почерк, аккуратная работа с окантовкой, геометрией бороды и окрашиванием. Быстро понимает запрос и стабильно держит качество.
+              </p>
+
+              <div class="mt-auto">
+                <div class="font-mono text-[11px] uppercase tracking-wider text-ink/60 mb-2.5">
+                  Ближайшее время сегодня:
+                </div>
+                <div class="flex flex-wrap gap-2 mb-5 sm:mb-6">
+                  <button type="button" class="slot-pill px-3.5 py-2.5 border border-ink font-mono text-xs font-semibold hover:bg-ink hover:text-bone transition-colors rounded-sm" data-master="Бабур" data-slot="18:30">18:30</button>
+                  <a href="https://n1170587.yclients.com/company/1074226/personal/menu?o=" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2.5 border border-ink/30 font-mono text-xs text-ink/70 hover:border-ink hover:text-ink transition-colors rounded-sm">Другое время</a>
+                </div>
+
+                <a
+                  href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="master-cta w-full inline-flex items-center justify-center gap-2 bg-ink hover:bg-brass text-bone hover:text-obsidian font-display font-bold text-xs uppercase tracking-wider py-4 px-5 transition-colors rounded-sm"
+                  data-default-label="Записаться к Бабуру"
+                >
+                  <span>Записаться к Бабуру</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- MASTER 03: ВЛАД -->
+          <article class="master-card group relative border border-ink bg-bone flex flex-col justify-between transition-all duration-300 lg:hover:-translate-y-1 lg:hover:shadow-[8px_8px_0px_#0B0B0C]">
+            <div class="px-4 sm:px-6 py-3 sm:py-4 border-b border-ink flex flex-wrap items-center justify-between gap-2">
+              <span class="font-mono text-[11px] sm:text-xs uppercase tracking-widest text-ink/70">ДОСЬЕ // 03</span>
+              <span class="font-mono text-[10px] sm:text-[11px] uppercase tracking-wider px-2 py-0.5 border border-ink font-semibold rounded-sm">
+                Свободные окна
+              </span>
+            </div>
+
+            <div class="p-5 sm:p-7 flex-1 flex flex-col">
+              <div class="flex items-center gap-4 sm:gap-5 mb-5 sm:mb-6">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 bg-ink text-bone border border-ink flex items-center justify-center relative overflow-hidden">
+                  <svg viewBox="0 0 80 80" class="w-full h-full" aria-hidden="true">
+                    <rect width="80" height="80" fill="#141416" />
+                    <polygon points="40,8 72,40 40,72 8,40" fill="none" stroke="#D4A359" stroke-width="1" />
+                    <text x="40" y="48" text-anchor="middle" fill="#F2EFE9" font-family="Unbounded, sans-serif" font-weight="900" font-size="26">ВЛ</text>
+                  </svg>
+                </div>
+                <div>
+                  <span class="inline-block font-mono text-[10px] sm:text-[11px] uppercase tracking-[0.2em] px-2 py-0.5 sm:px-2.5 sm:py-1 border border-ink/30 text-ink/80 mb-1.5 sm:mb-2">
+                    Парикмахер
+                  </span>
+                  <h3 class="font-display text-2xl sm:text-3xl font-black uppercase tracking-tight leading-none">Влад</h3>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between py-3 border-y border-ink/20 mb-4 sm:mb-5 font-mono text-xs">
+                <div class="flex items-center gap-1 text-ink">
+                  <span class="text-base leading-none text-amber-600">★★★★★</span>
+                  <span class="font-bold ml-1">5.0</span>
+                </div>
+                <span class="font-bold uppercase tracking-wider">2 отзыва</span>
+              </div>
+
+              <p class="text-sm text-ink/80 leading-relaxed mb-5 sm:mb-6">
+                Внимательный парикмахер-универсал: мужские, детские и классические стрижки. Больше всего свободных окон для записи день-в-день.
+              </p>
+
+              <div class="mt-auto">
+                <div class="font-mono text-[11px] uppercase tracking-wider text-ink/60 mb-2.5">
+                  Ближайшее время сегодня:
+                </div>
+                <div class="grid grid-cols-4 sm:flex sm:flex-wrap gap-2 mb-5 sm:mb-6">
+                  <button type="button" class="slot-pill py-2.5 sm:px-3 border border-ink font-mono text-xs font-semibold hover:bg-ink hover:text-bone transition-colors rounded-sm text-center" data-master="Влад" data-slot="18:30">18:30</button>
+                  <button type="button" class="slot-pill py-2.5 sm:px-3 border border-ink font-mono text-xs font-semibold hover:bg-ink hover:text-bone transition-colors rounded-sm text-center" data-master="Влад" data-slot="19:00">19:00</button>
+                  <button type="button" class="slot-pill py-2.5 sm:px-3 border border-ink font-mono text-xs font-semibold hover:bg-ink hover:text-bone transition-colors rounded-sm text-center" data-master="Влад" data-slot="19:30">19:30</button>
+                  <button type="button" class="slot-pill py-2.5 sm:px-3 border border-ink font-mono text-xs font-semibold hover:bg-ink hover:text-bone transition-colors rounded-sm text-center" data-master="Влад" data-slot="20:30">20:30</button>
+                </div>
+
+                <a
+                  href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="master-cta w-full inline-flex items-center justify-center gap-2 bg-ink hover:bg-brass text-bone hover:text-obsidian font-display font-bold text-xs uppercase tracking-wider py-4 px-5 transition-colors rounded-sm"
+                  data-default-label="Записаться к Владу"
+                >
+                  <span>Записаться к Владу</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. BENTO ATMOSPHERE & ADVANTAGES SECTION ("ПОЧЕМУ ВЫБИРАЮТ НАС")
+         ========================================================================== -->
+    <section id="why-us" class="scroll-mt-16 sm:scroll-mt-20 py-14 sm:py-20 lg:py-28 border-b border-hairline">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
+        <!-- Header -->
+        <div class="reveal flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6 pb-7 sm:pb-10 border-b border-hairline">
+          <div>
+            <span class="font-mono text-[11px] sm:text-xs uppercase tracking-[0.22em] text-brass">03 // Стандарты сервиса</span>
+            <h2 class="font-display text-2xl sm:text-5xl font-black uppercase tracking-tight mt-2.5 sm:mt-3 leading-none">
+              Почему выбирают нас
+            </h2>
+          </div>
+          <span class="font-mono text-[11px] sm:text-xs uppercase tracking-[0.18em] text-muted">
+            [ НИЧЕГО ЛИШНЕГО — ТОЛЬКО РЕЗУЛЬТАТ ]
+          </span>
+        </div>
+
+        <!-- Asymmetric Architectural Bento Grid -->
+        <div class="reveal grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5 mt-8 sm:mt-12">
+
+          <!-- Bento 1: Honest Pricing (Large) -->
+          <div class="md:col-span-7 border border-hairline bg-charcoal p-5 sm:p-9 rounded-sm flex flex-col justify-between md:min-h-[260px] hover:border-brass/60 transition-colors">
+            <div class="flex flex-wrap items-center justify-between gap-2 font-mono text-[11px] sm:text-xs text-muted uppercase tracking-widest">
+              <span>01 / ПРОЗРАЧНОСТЬ</span>
+              <span class="text-brass">ФИКСИРОВАННЫЙ ПРАЙС</span>
+            </div>
+            <div class="mt-6 sm:mt-8">
+              <div class="font-display text-3xl sm:text-5xl font-black text-brass mb-2 sm:mb-3">700 ₽</div>
+              <h3 class="font-display text-lg sm:text-2xl font-bold uppercase text-bone mb-2 sm:mb-3">
+                Честные цены без переплат
+              </h3>
+              <p class="text-sm sm:text-base text-muted leading-relaxed max-w-xl">
+                Полноценная мужская стрижка — 700 ₽, детская — 600 ₽, пенсионерам (65+) — 500 ₽. Вы платите за мастерство барбера, а не за наценку за «модный интерьер».
+              </p>
+            </div>
+          </div>
+
+          <!-- Bento 2: Strict Timing -->
+          <div class="md:col-span-5 border border-hairline bg-charcoal p-5 sm:p-9 rounded-sm flex flex-col justify-between md:min-h-[260px] hover:border-brass/60 transition-colors">
+            <div class="flex flex-wrap items-center justify-between gap-2 font-mono text-[11px] sm:text-xs text-muted uppercase tracking-widest">
+              <span>02 / ТАЙМИНГ</span>
+              <span class="text-bone">ТОЧНО ПО ЧАСАМ</span>
+            </div>
+            <div class="mt-6 sm:mt-8">
+              <div class="font-mono text-3xl sm:text-5xl font-bold text-bone mb-2 sm:mb-3">30 <span class="text-brass text-xl sm:text-2xl">МИН</span></div>
+              <h3 class="font-display text-lg sm:text-xl font-bold uppercase text-bone mb-2 sm:mb-3">
+                Ценим ваше время
+              </h3>
+              <p class="text-sm text-muted leading-relaxed">
+                Каждая услуга укладывается в чёткий 30-минутный регламент. Удобно заскочить в обед или после работы без долгого ожидания.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bento 3: Reviews Trust -->
+          <div class="md:col-span-5 border border-hairline bg-charcoal p-5 sm:p-9 rounded-sm flex flex-col justify-between md:min-h-[250px] hover:border-brass/60 transition-colors">
+            <div class="flex flex-wrap items-center justify-between gap-2 font-mono text-[11px] sm:text-xs text-muted uppercase tracking-widest">
+              <span>03 / РЕПУТАЦИЯ</span>
+              <span class="text-brass">YCLIENTS VERIFIED</span>
+            </div>
+            <div class="mt-6 sm:mt-8">
+              <div class="font-mono text-3xl sm:text-5xl font-bold text-bone mb-2 sm:mb-3">295<span class="text-brass">+</span></div>
+              <h3 class="font-display text-lg sm:text-xl font-bold uppercase text-bone mb-2 sm:mb-3">
+                Проверено гостями Уфы
+              </h3>
+              <p class="text-sm text-muted leading-relaxed">
+                Сотни подтверждённых отзывов в системе записи. Клиенты возвращаются к Алику, Бабуру и Владу снова и приводят сыновей и отцов.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bento 4: 24/7 Booking (Brass Accent Card) -->
+          <div class="md:col-span-7 border border-brass bg-brass text-obsidian p-5 sm:p-9 rounded-sm flex flex-col justify-between md:min-h-[250px]">
+            <div class="flex flex-wrap items-center justify-between gap-2 font-mono text-[11px] sm:text-xs uppercase tracking-widest font-bold opacity-80">
+              <span>04 / ОНЛАЙН-ЗАПИСЬ 24/7</span>
+              <span>30 СЕКУНД</span>
+            </div>
+            <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:items-end justify-between gap-5 sm:gap-6">
+              <div>
+                <h3 class="font-display text-xl sm:text-3xl font-black uppercase leading-tight mb-2 sm:mb-3">
+                  Запись без звонков в любое время
+                </h3>
+                <p class="text-sm sm:text-base font-medium opacity-85 max-w-md leading-relaxed">
+                  Выбирайте мастера, нужные услуги и свободное окно прямо в телефоне через YCLIENTS — мгновенное подтверждение визита.
+                </p>
+              </div>
+              <a
+                href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 bg-obsidian hover:bg-charcoal text-bone font-display font-bold text-xs uppercase tracking-wider px-6 py-4 rounded-sm transition-transform hover:-translate-y-0.5"
+              >
+                <span>Записаться</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. LOCATION & GRAND FOOTER ("ГДЕ НАС НАЙТИ")
+         ========================================================================== -->
+    <section id="contacts" class="scroll-mt-16 sm:scroll-mt-20 py-14 sm:py-20 lg:py-28">
+      <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
+        <!-- Address Block -->
+        <div class="reveal border border-hairline bg-charcoal p-5 sm:p-12 lg:p-16 rounded-sm">
+          <div class="flex flex-wrap items-center justify-between gap-2 sm:gap-4 font-mono text-[11px] sm:text-xs uppercase tracking-[0.2em] text-brass mb-4 sm:mb-6">
+            <span>04 // Локация и контакты</span>
+            <span class="text-muted">УФА • БАШКОРТОСТАН</span>
+          </div>
+
+          <h2 class="font-display text-2xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[1.1] text-bone">
+            г. Уфа, ул. Юрия Гагарина, 23
+          </h2>
+
+          <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-2.5 sm:gap-3.5">
+            <!-- Copy Address Interactive Button -->
+            <button
+              id="copy-address-btn"
+              type="button"
+              class="inline-flex items-center justify-center gap-2.5 bg-bone hover:bg-brass text-obsidian font-display font-bold text-xs uppercase tracking-wider px-6 py-4 rounded-sm transition-colors active:scale-[0.99]"
+            >
+              <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Скопировать адрес</span>
+            </button>
+
+            <!-- Maps links side-by-side on mobile -->
+            <div class="grid grid-cols-2 sm:flex gap-2.5 sm:gap-3.5">
+              <a
+                href="https://2gis.ru/ufa/search/%D0%A3%D1%84%D0%B0%2C%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%D0%B0%2023"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-1.5 sm:gap-2 border border-hairline hover:border-brass text-bone hover:text-brass font-mono text-[11px] sm:text-xs uppercase tracking-wider font-semibold px-3 sm:px-5 py-3.5 sm:py-4 rounded-sm transition-colors text-center"
+              >
+                <span>2ГИС</span>
+                <span>↗</span>
+              </a>
+
+              <a
+                href="https://yandex.ru/maps/?text=%D0%A3%D1%84%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%AE%D1%80%D0%B8%D1%8F%20%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD%D0%B0%2C%2023"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-1.5 sm:gap-2 border border-hairline hover:border-brass text-bone hover:text-brass font-mono text-[11px] sm:text-xs uppercase tracking-wider font-semibold px-3 sm:px-5 py-3.5 sm:py-4 rounded-sm transition-colors text-center"
+              >
+                <span>Яндекс Карты</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Final Grand Booking CTA Strip -->
+          <div class="mt-8 sm:mt-12 pt-7 sm:pt-10 border-t border-hairline flex flex-col lg:flex-row lg:items-center justify-between gap-5 sm:gap-6">
+            <div>
+              <p class="font-display text-lg sm:text-2xl font-bold uppercase text-bone">
+                Готовы обновить образ?
+              </p>
+              <p class="text-sm text-muted mt-1">
+                Выберите мастера и удобное время в официальном виджете YCLIENTS.
+              </p>
+            </div>
+            <a
+              href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full lg:w-auto inline-flex items-center justify-center gap-3 bg-brass hover:bg-brassHover text-obsidian font-display font-black text-xs sm:text-sm uppercase tracking-wider px-7 sm:px-9 py-4 sm:py-5 rounded-sm transition-all hover:-translate-y-0.5"
+            >
+              <span>Записаться онлайн сейчас</span>
+              <span>→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       GRAND FOOTER
+       ========================================================================== -->
+  <footer class="border-t border-hairline bg-obsidian pb-36 sm:pb-24">
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-10 sm:py-12 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
+      <!-- Footer Logo -->
+      <div class="flex items-center gap-3.5 sm:gap-4">
+        <svg class="w-12 h-12 sm:w-14 sm:h-14 text-bone shrink-0" style="--logo-bg: #0B0B0C;" aria-label="Дело в стрижке">
+          <use href="#logo-delo-v-strizhke"></use>
+        </svg>
+        <div>
+          <div class="font-display text-sm sm:text-base font-extrabold uppercase tracking-tight">ДЕЛО В СТРИЖКЕ</div>
+          <div class="font-mono text-[11px] sm:text-xs text-muted mt-0.5">Уфа, ул. Юрия Гагарина, 23 • ESTD 2023</div>
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="flex flex-wrap items-center justify-center gap-5 sm:gap-6 font-mono text-xs uppercase tracking-widest text-muted">
+        <a href="#services" class="hover:text-brass transition-colors">Услуги</a>
+        <a href="#masters" class="hover:text-brass transition-colors">Мастера</a>
+        <a href="#why-us" class="hover:text-brass transition-colors">О нас</a>
+        <a href="https://n1170587.yclients.com/company/1074226/personal/menu?o=" target="_blank" rel="noopener noreferrer" class="text-brass hover:underline">YCLIENTS</a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="font-mono text-[11px] text-muted text-center md:text-right">
+        © 2023–2026 Барбершоп «Дело в стрижке».<br class="hidden sm:inline" /> Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       STICKY FLOATING VISIT RECEIPT BAR ("ЧЕК ВИЗИТА")
+       ========================================================================== -->
+  <div id="visit-bar" class="hidden-bar fixed bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 z-40 max-w-4xl mx-auto">
+    <div class="bg-bone text-ink border-2 border-ink shadow-[0_20px_50px_rgba(0,0,0,0.8)] rounded-sm px-3.5 py-3 sm:px-6 sm:py-4 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
+      <div class="flex items-center justify-between sm:justify-start gap-4 sm:gap-5">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-ink/60 font-bold">
+            Чек визита • <span id="bar-count">0 услуг</span>
+          </div>
+          <div class="flex items-baseline gap-2.5 sm:gap-3 mt-0.5">
+            <span id="bar-total-price" class="font-display text-lg sm:text-2xl font-black text-ink">0 ₽</span>
+            <span id="bar-total-time" class="font-mono text-xs font-semibold text-ink/70">0 мин</span>
+          </div>
+        </div>
+
+        <button
+          id="clear-services-btn"
+          type="button"
+          class="font-mono text-[11px] uppercase tracking-wider text-ink/60 hover:text-ink underline underline-offset-4 px-2 py-1"
+        >
+          Очистить
+        </button>
+      </div>
+
+      <a
+        href="https://n1170587.yclients.com/company/1074226/personal/menu?o="
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center gap-2 bg-ink hover:bg-brass text-bone hover:text-obsidian font-display font-bold text-xs uppercase tracking-wider px-5 sm:px-6 py-3 sm:py-3.5 rounded-sm transition-colors"
+      >
+        <span>Записаться на выбранное</span>
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CUSTOM TOAST NOTIFICATION
+       ========================================================================== -->
+  <div
+    id="toast"
+    role="status"
+    aria-live="polite"
+    class="fixed top-20 sm:top-24 left-4 right-4 sm:left-auto sm:right-8 z-50 -translate-y-4 sm:translate-y-0 sm:translate-x-[140%] opacity-0 pointer-events-none transition-all duration-300 bg-brass text-obsidian font-mono text-xs font-bold uppercase tracking-wider px-4 sm:px-5 py-3.5 rounded-sm shadow-2xl flex items-center justify-center sm:justify-start gap-2.5"
+  >
+    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+    </svg>
+    <span id="toast-message">Адрес скопирован!</span>
+  </div>
+
+  <!-- ==========================================================================
+       APPLICATION LOGIC
+       ========================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      const SERVICES = [
+        { id: 1, code: '01', name: 'Стрижка мужская', duration: 30, price: 700, category: 'Стрижки' },
+        { id: 2, code: '02', name: 'Стрижка детская', duration: 30, price: 600, category: 'Стрижки' },
+        { id: 3, code: '03', name: 'Стрижка головы пенсионерам (65 лет и старше)', duration: 30, price: 500, category: 'Стрижки' },
+        { id: 4, code: '04', name: 'Стрижка наголо (опасное бритьё)', duration: 30, price: 700, category: 'Стрижки' },
+        { id: 5, code: '05', name: 'Окантовка головы', duration: 30, price: 500, category: 'Стрижки' },
+        { id: 6, code: '06', name: 'Оформление бороды', duration: 30, price: 500, category: 'Борода' },
+        { id: 7, code: '07', name: 'Окрашивание головы', duration: 30, price: 700, category: 'Окрашивание' },
+        { id: 8, code: '08', name: 'Окрашивание бороды', duration: 30, price: 500, category: 'Окрашивание' },
+        { id: 9, code: '09', name: 'Эпиляция воском (нос, уши, оформление бровей)', duration: 30, price: 400, category: 'Уход' },
+      ];
+
+      let activeCategory = 'all';
+      const selectedServiceIds = new Set();
+
+      const servicesListEl = document.getElementById('services-list');
+      const filterTabs = document.querySelectorAll('.filter-tab');
+      const visitBar = document.getElementById('visit-bar');
+      const barCount = document.getElementById('bar-count');
+      const barTotalPrice = document.getElementById('bar-total-price');
+      const barTotalTime = document.getElementById('bar-total-time');
+      const clearServicesBtn = document.getElementById('clear-services-btn');
+
+      function pluralizeServices(n) {
+        const mod10 = n % 10;
+        const mod100 = n % 100;
+        if (mod10 === 1 && mod100 !== 11) return `${n} услуга`;
+        if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return `${n} услуги`;
+        return `${n} услуг`;
+      }
+
+      function formatDuration(mins) {
+        if (mins < 60) return `${mins} мин`;
+        const h = Math.floor(mins / 60);
+        const m = mins % 60;
+        return m === 0 ? `${h} ч` : `${h} ч ${m} мин`;
+      }
+
+      function renderServices() {
+        if (!servicesListEl) return;
+
+        const filtered = activeCategory === 'all'
+          ? SERVICES
+          : SERVICES.filter((s) => s.category === activeCategory);
+
+        servicesListEl.innerHTML = filtered.map((service) => {
+          const isSelected = selectedServiceIds.has(service.id);
+          return `
+            <button
+              type="button"
+              data-service-id="${service.id}"
+              aria-pressed="${isSelected}"
+              class="service-row ${isSelected ? 'selected' : ''} w-full text-left border-b border-hairline py-4 sm:py-6 px-2.5 sm:px-5 flex items-center justify-between gap-3 sm:gap-4 hover:bg-charcoal/90 group focus:outline-none focus:ring-1 focus:ring-brass"
+            >
+              <div class="flex items-start sm:items-center gap-3 sm:gap-7 min-w-0">
+                <span class="hidden sm:inline font-mono text-sm ${isSelected ? 'text-brass font-bold' : 'text-muted group-hover:text-brass'} transition-colors shrink-0">
+                  ${service.code}
+                </span>
+                <div class="min-w-0">
+                  <div class="font-display text-sm sm:text-xl font-bold text-bone group-hover:text-brass transition-colors leading-snug">
+                    ${service.name}
+                  </div>
+                  <div class="flex items-center gap-2 sm:gap-3 mt-1 sm:mt-1.5 font-mono text-[10px] sm:text-[11px] uppercase tracking-wider text-muted">
+                    <span>${service.category}</span>
+                    <span>•</span>
+                    <span>${service.duration} мин</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-end gap-3 sm:gap-5 shrink-0">
+                <span class="font-mono text-base sm:text-2xl font-bold whitespace-nowrap ${isSelected ? 'text-brass' : 'text-bone'}">
+                  ${service.price} ₽
+                </span>
+                <span
+                  class="w-8 h-8 sm:w-9 sm:h-9 rounded-sm border flex items-center justify-center transition-all shrink-0 ${
+                    isSelected
+                      ? 'bg-brass border-brass text-obsidian font-bold'
+                      : 'border-hairline text-muted group-hover:border-brass group-hover:text-brass'
+                  }"
+                  aria-hidden="true"
+                >
+                  ${
+                    isSelected
+                      ? '<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>'
+                      : '<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>'
+                  }
+                </span>
+              </div>
+            </button>
+          `;
+        }).join('');
+
+        servicesListEl.querySelectorAll('[data-service-id]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const id = Number(btn.getAttribute('data-service-id'));
+            if (selectedServiceIds.has(id)) {
+              selectedServiceIds.delete(id);
+            } else {
+              selectedServiceIds.add(id);
+            }
+            renderServices();
+            updateVisitBar();
+          });
+        });
+      }
+
+      function updateVisitBar() {
+        const count = selectedServiceIds.size;
+        if (count === 0) {
+          visitBar.classList.remove('visible-bar');
+          visitBar.classList.add('hidden-bar');
+          return;
+        }
+
+        let totalPrice = 0;
+        let totalMins = 0;
+        SERVICES.forEach((s) => {
+          if (selectedServiceIds.has(s.id)) {
+            totalPrice += s.price;
+            totalMins += s.duration;
+          }
+        });
+
+        barCount.textContent = pluralizeServices(count);
+        barTotalPrice.textContent = `${totalPrice.toLocaleString('ru-RU')} ₽`;
+        barTotalTime.textContent = `≈ ${formatDuration(totalMins)}`;
+
+        visitBar.classList.remove('hidden-bar');
+        visitBar.classList.add('visible-bar');
+      }
+
+      filterTabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          activeCategory = tab.getAttribute('data-category');
+          filterTabs.forEach((t) => {
+            t.classList.remove('bg-bone', 'text-obsidian', 'border-bone');
+            t.classList.add('bg-transparent', 'text-bone/80', 'border-hairline');
+          });
+          tab.classList.remove('bg-transparent', 'text-bone/80', 'border-hairline');
+          tab.classList.add('bg-bone', 'text-obsidian', 'border-bone');
+          renderServices();
+        });
+      });
+
+      if (clearServicesBtn) {
+        clearServicesBtn.addEventListener('click', () => {
+          selectedServiceIds.clear();
+          renderServices();
+          updateVisitBar();
+        });
+      }
+
+      document.querySelectorAll('.master-card').forEach((card) => {
+        const pills = card.querySelectorAll('.slot-pill');
+        const cta = card.querySelector('.master-cta');
+        const defaultLabel = cta ? cta.getAttribute('data-default-label') : '';
+
+        pills.forEach((pill) => {
+          pill.addEventListener('click', () => {
+            const wasSelected = pill.classList.contains('bg-ink');
+            pills.forEach((p) => {
+              p.classList.remove('bg-ink', 'text-bone');
+            });
+
+            if (wasSelected) {
+              if (cta) cta.querySelector('span').textContent = defaultLabel;
+            } else {
+              pill.classList.add('bg-ink', 'text-bone');
+              const slot = pill.getAttribute('data-slot');
+              if (cta) cta.querySelector('span').textContent = `Записаться на ${slot}`;
+            }
+          });
+        });
+      });
+
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileDrawer = document.getElementById('mobile-drawer');
+      const iconHamburger = document.getElementById('icon-hamburger');
+      const iconClose = document.getElementById('icon-close');
+
+      function toggleMobileMenu(forceClose = false) {
+        const isOpen = !mobileDrawer.classList.contains('hidden');
+        const shouldClose = forceClose || isOpen;
+        mobileDrawer.classList.toggle('hidden', shouldClose);
+        iconHamburger.classList.toggle('hidden', !shouldClose);
+        iconClose.classList.toggle('hidden', shouldClose);
+        if (mobileMenuBtn) {
+          mobileMenuBtn.setAttribute('aria-expanded', String(!shouldClose));
+        }
+      }
+
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', () => toggleMobileMenu(false));
+      }
+      document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+        link.addEventListener('click', () => toggleMobileMenu(true));
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') toggleMobileMenu(true);
+      });
+
+      const copyBtn = document.getElementById('copy-address-btn');
+      const toastEl = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      let toastTimer = null;
+
+      function showToast(message) {
+        if (!toastEl || !toastMsg) return;
+        toastMsg.textContent = message;
+        toastEl.classList.remove('-translate-y-4', 'sm:translate-x-[140%]', 'opacity-0');
+        toastEl.classList.add('translate-y-0', 'sm:translate-x-0', 'opacity-100');
+
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toastEl.classList.remove('translate-y-0', 'sm:translate-x-0', 'opacity-100');
+          toastEl.classList.add('-translate-y-4', 'sm:translate-x-[140%]', 'opacity-0');
+        }, 2800);
+      }
+
+      if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+          const addressText = 'г. Уфа, ул. Юрия Гагарина, 23';
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(addressText)
+              .then(() => showToast('Адрес скопирован!'))
+              .catch(() => fallbackCopy(addressText));
+          } else {
+            fallbackCopy(addressText);
+          }
+        });
+      }
+
+      function fallbackCopy(text) {
+        try {
+          const tempInput = document.createElement('textarea');
+          tempInput.value = text;
+          tempInput.setAttribute('readonly', '');
+          tempInput.style.position = 'fixed';
+          tempInput.style.opacity = '0';
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempInput);
+          showToast('Адрес скопирован!');
+        } catch (err) {
+          showToast(text);
+        }
+      }
+
+      function initRevealObserver() {
+        const revealEls = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window)) {
+          revealEls.forEach((el) => el.classList.add('visible'));
+          return;
+        }
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.08, rootMargin: '0px 0px -24px 0px' }
+        );
+
+        revealEls.forEach((el) => observer.observe(el));
+      }
+
+      renderServices();
+      initRevealObserver();
+    })();
+  </script>
+</body>
+</html>
